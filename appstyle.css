@@ -6,11 +6,6 @@ body {
   color: #FFF;
 }
 
-body {
-  border: 1px solid #48545c;
-  overflow-y: hidden;
-}
-
 #titlebar {
   display: block;
   position: fixed;
