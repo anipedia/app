@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  border: 0px solid #48545c;
+  border: 1px solid #48545c;
   overflow-y: hidden;
 }
 
@@ -54,7 +54,7 @@ body {
   grid-template-columns: auto 138px;
 }
 
-@font-face { font-family: Discord; src: url('https://discordapp.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff'); } 
+@font-face { font-family: Discord; src: url('https://anipedia.github.io/app/Uni%20Sans%20Heavy.otf'); } 
 
 #window-title {
   grid-column: 1;
