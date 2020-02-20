@@ -26,7 +26,7 @@ var firebaseConfig = {
  var provider = new firebase.auth.FacebookAuthProvider();
   
  function Google(){
-  firebase.auth().signInWithRedirect(provider).then(function(result) {
+  firebase.auth().signInWithPopup(provider).then(function(result) {
   var token = result.credential.accessToken;
   var user = result.user;
 }).catch(function(error) {
@@ -49,9 +49,11 @@ firebase.auth().onAuthStateChanged(function(user) {
     if(user != null){
       var email_id = user.email;
 	  var name = user.displayName;
+	  var photoUrl = user.photoURL;
 	  
       document.getElementById("user_para").innerHTML = email_id;
       document.getElementById("auser_para").innerHTML = name;
+      document.getElementById("photo_para").innerHTML = user.photoURL;
 
     }
 
