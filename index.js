@@ -26,7 +26,7 @@ var firebaseConfig = {
  var provider = new firebase.auth.FacebookAuthProvider();
   
  function Google(){
-  firebase.auth().signInWithPopup(provider).then(function(result) {
+  firebase.auth.FacebookAuthProvider().signInWithRedirect(provider).then(function(result) {
   var token = result.credential.accessToken;
   var user = result.user;
 }).catch(function(error) {
