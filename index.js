@@ -53,7 +53,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 	  
       document.getElementById("user_para").innerHTML = email_id;
       document.getElementById("auser_para").innerHTML = name;
-      document.getElementById("photo_para").innerHTML = photoUrl;
+      document.getElementById("photo_para").src= photoUrl;
 
     }
 
