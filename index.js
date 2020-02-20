@@ -14,7 +14,7 @@ var firebaseConfig = {
   provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
   
  function Google(){
-  firebase.auth().signInWithPopup(provider).then(function(result) {
+  firebase.auth().signInWithRedirect(provider).then(function(result) {
   var token = result.credential.accessToken;
   var user = result.user;
 }).catch(function(error) {
