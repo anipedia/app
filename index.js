@@ -47,9 +47,11 @@ firebase.auth().onAuthStateChanged(function(user) {
     var user = firebase.auth().currentUser;
 
     if(user != null){
-      var name, email_id = user.email;
+      var email_id = user.email;
+	  var name = user.displayName;
+	  
       document.getElementById("user_para").innerHTML = email_id;
-      document.getElementById("auser_para").innerHTML = email_id;
+      document.getElementById("auser_para").innerHTML = name;
 
     }
 
@@ -81,3 +83,4 @@ function login(){
 function logout(){
   firebase.auth().signOut();
 }
+
