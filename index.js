@@ -22,11 +22,10 @@ var firebaseConfig = {
 		
 		alert("Signed Up");
 	}
-
- var provider = new firebase.auth.FacebookAuthProvider();
   
  function Google(){
-  firebase.auth.FacebookAuthProvider().signInWithRedirect(provider).then(function(result) {
+  var provider = new firebase.auth.FacebookAuthProvider();
+  firebase.auth().signInWithRedirect(provider).then(function(result) {
   var token = result.credential.accessToken;
   var user = result.user;
 }).catch(function(error) {
