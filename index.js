@@ -9,9 +9,8 @@ var firebaseConfig = {
     measurementId: "G-1G0PSD3LND"
   };
   firebase.initializeApp(firebaseConfig);
-  
- var provider = new firebase.auth.GoogleAuthProvider();
-  provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
+ var provider = new firebase.auth.FacebookAuthProvider();
   
  function Google(){
   firebase.auth().signInWithRedirect(provider).then(function(result) {
