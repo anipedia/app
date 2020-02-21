@@ -2,7 +2,11 @@ function createAccount() {
     var name = document.getElementById('user_name').value;
     var em = document.getElementById('user_email').value;
     var pass = document.getElementById('user_pass').value;
+	var name = uname;
+	    
 
+	  
+    document.getElementById("auser_para").innerHTML = name;
     firebase.auth().createUserWithEmailAndPassword(em, pass)
     
     .then(function(success) {
