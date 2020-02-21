@@ -9,35 +9,23 @@ var firebaseConfig = {
     measurementId: "G-1G0PSD3LND"
   };
   firebase.initializeApp(firebaseConfig);
-
-const auth = firebase.auth();
-
+  
+  const auth = firebase.auth();
+  
   function signUp(){
+
 		var email = document.getElementById("email");
 		var password = document.getElementById("password");
-	  
+		
 		const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
 		promise.catch(e => alert(e.message));
 		
 		alert("Signed Up");
 	}
-  
-function Github(){
-  var provider = new firebase.auth.GithubAuthProvider();
-  firebase.auth().signInWithRedirect(provider).then(function(result) {
-  var token = result.credential.accessToken;
-  var user = result.user;
-}).catch(function(error) {
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  var email = error.email;
-  var credential = error.credential;
-});
- }
 
  function Google(){
   var provider = new firebase.auth.FacebookAuthProvider();
-  firebase.auth().signInWithRedirect(provider).then(function(result) {
+  firebase.auth().signInWithPopup(provider).then(function(result) {
   var token = result.credential.accessToken;
   var user = result.user;
 }).catch(function(error) {
@@ -64,7 +52,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 	  
       document.getElementById("user_para").innerHTML = email_id;
       document.getElementById("auser_para").innerHTML = name;
-	  document.getElementById("photo_para").src=photoURL;
+      document.getElementById("photo_para").src=photoURL;
 
     }
 
