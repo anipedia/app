@@ -19,7 +19,7 @@ function createAccount() {
 
         skey.set(userObj).then(function(success) {
             alert("Your account has been created.");
-            location.href='2020/02/home.html';
+            location.href='home.html';
         });
 
     })
