@@ -26,13 +26,12 @@ user.updateProfile({
 }).catch(function(error) {
   // An error happened.
 });
-}
 
 const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
 		promise.catch(e => alert(e.message));
 		
 		alert("Signed Up");
-)
+}
 	    
  function Google(){
   var provider = new firebase.auth.FacebookAuthProvider();
