@@ -6,10 +6,10 @@ function createAccount() {
     firebase.auth().createUserWithEmailAndPassword(em, pass)
     
     .then(function(success) {
-        var userId =firebase.database().ref('Users/').push();
+        var skey =firebase.database().ref('Users/').push();
 
         var userObj = {
-            id : userId,
+            id : skey.key,
             uname : name,
             email : em,
             password : pass
