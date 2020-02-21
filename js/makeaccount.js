@@ -10,9 +10,10 @@ function createAccount() {
 
         var userObj = {
             id : skey.key,
-            uname : name,
+            username : name,
             email : em,
-            password : pass
+            password : pass,
+            profile_picture : imageUrl
         }
 
         skey.set(userObj).then(function(success) {
