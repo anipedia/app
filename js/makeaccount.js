@@ -7,20 +7,14 @@ function createAccount() {
     firebase.auth().createUserWithEmailAndPassword(em, pass)
     
     .then(function(success) {
-        var skey =firebase.database().ref('Users/').push();
-
-        var userObj = {
-            id : skey.key,
-            username : name,
-            email : em,
-            password : pass,
-            profile_picture : imageUrl
-        }
-
-        skey.set(userObj).then(function(success) {
-            alert("Your account has been created.");
-            location.href='home.html';
-        });
+       function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: em,
+    password: pass,
+    profile_picture : imageUrl
+  });
+}
 
     })
     
