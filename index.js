@@ -15,8 +15,8 @@ var firebaseConfig = {
 function signUp(){
 var user = firebase.auth().currentUser;
 var displayName = document.getElementById("name").value;
-var email = document.getElementById("email").value;
-var password = document.getElementById("password").value;
+var email = document.getElementById("email");
+var password = document.getElementById("password");
 	
 user.updateProfile({
   displayName: "Updated User's Name",
@@ -28,9 +28,11 @@ user.updateProfile({
 });
 }
 
-firebase.auth().createUserWithEmailAndPassword(email, password)
-.then((user)=>{ 
-});
+const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
+		promise.catch(e => alert(e.message));
+		
+		alert("Signed Up");
+)
 	    
  function Google(){
   var provider = new firebase.auth.FacebookAuthProvider();
