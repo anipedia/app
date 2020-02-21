@@ -10,8 +10,9 @@ var firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 
+const auth = firebase.auth();
+
   function signUp(){
-	        const auth = firebase.auth();
 		var email = document.getElementById("email");
 		var password = document.getElementById("password");
 	  
