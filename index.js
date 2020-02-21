@@ -29,24 +29,9 @@ user.updateProfile({
 }
 
 firebase.auth().createUserWithEmailAndPassword(email, password)
-.then(
-  (user)=>{
- // here you can use either the returned user object or       firebase.auth().currentUser. I will use the returned user object
-    if(user){
-      user.updateProfile({
-         displayName: // some displayName,
-      }).then(
-        (s)=> // perform any other operation
-      )
-    }
-})
-.catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  // ...
+.then((user)=>{ 
 });
-
+	    
  function Google(){
   var provider = new firebase.auth.FacebookAuthProvider();
   firebase.auth().signInWithRedirect(provider).then(function(result) {
