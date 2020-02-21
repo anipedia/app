@@ -25,13 +25,6 @@ var firebaseConfig = {
 
 
  function Google(){
- function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + userId).set({
-    username: name,
-    email: email
-    //some more user data
-  });
-}
   var provider = new firebase.auth.FacebookAuthProvider();
   firebase.auth().signInWithRedirect(provider).then(function(result) {
   var token = result.credential.accessToken;
@@ -79,7 +72,14 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     var user = firebase.auth().currentUser;
 
-    if(user != null){
+    if(user){
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email
+    //some more user data
+  });
+}
       var email_id = user.email;
 	  var name = user.displayName;
 	  var photoUrl = user.photoURL;
