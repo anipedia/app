@@ -10,9 +10,8 @@ var firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 
-  const auth = firebase.auth();
-  
   function signUp(){
+	        const auth = firebase.auth();
 		var email = document.getElementById("email");
 		var password = document.getElementById("password");
 	  
@@ -64,7 +63,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 	  
       document.getElementById("user_para").innerHTML = email_id;
       document.getElementById("auser_para").innerHTML = name;
-      document.getElementById("photo_para").src=photoUrl;
+	  document.getElementById("photo_para").src=photoURL;
 
     }
 
