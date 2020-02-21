@@ -107,6 +107,21 @@ function login(){
 
 }
 
+  constructor(props) {
+    super(props);
+
+    //initialize firebase
+    if (!Firebase.apps.length) {
+      Firebase.initializeApp(firebaseConfig);
+    }
+    Firebase.auth().onAuthStateChanged(this.onAuthStateChanged);
+    Firebase.database()
+      .ref('Profile/')
+      .on('value', (snapshot) => {
+        console.log(snapshot.val());
+      });
+  }
+
 function logout(){
   firebase.auth().signOut();
 }
