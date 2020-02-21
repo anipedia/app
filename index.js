@@ -20,7 +20,6 @@ var password = document.getElementById("password").value;
 	
 user.updateProfile({
   displayName: "Updated User's Name",
-  photoURL: "https://example.com/user/profile.jpg"
 }).then(function() {
   // Update successful.
   console.log('User Profile Updated Successfully');
@@ -36,7 +35,6 @@ firebase.auth().createUserWithEmailAndPassword(email, password)
     if(user){
       user.updateProfile({
          displayName: // some displayName,
-         photoURL: // some photo url
       }).then(
         (s)=> // perform any other operation
       )
