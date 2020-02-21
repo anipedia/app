@@ -10,22 +10,6 @@ var firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 
-var user = firebase.auth().currentUser;
-var name, email, photoUrl, uid, emailVerified;
-
-if (user != null) {
-  name = user.displayName;
-  email = user.email;
-  photoUrl = user.photoURL;
-  emailVerified = user.emailVerified;
-  uid = user.uid;  
-	
-	document.getElementById("aname").innerHTML = name;
-	document.getElementById("aemail").innerHTML = email;
-	document.getElementById("aphotoUrl").scr=photoUrl;
-	document.getElementById("auid").innerHTML = uid;
-}
-  
   const auth = firebase.auth();
   
   function signUp(){
@@ -77,10 +61,12 @@ firebase.auth().onAuthStateChanged(function(user) {
       var email_id = user.email;
 	  var name = user.displayName;
 	  var photoUrl = user.photoURL;
+	  var uid = user.uid;
 	  
       document.getElementById("user_para").innerHTML = email_id;
       document.getElementById("auser_para").innerHTML = name;
       document.getElementById("photo_para").src=photoUrl;
+      document.getElementById("uid_para").innerHTML = uid;
 
     }
 
