@@ -50,7 +50,7 @@ function Github(){
  }
 
 function Microsoft(){
-  var provider = new firebase.auth.MicrosoftAuthProvider();
+  var provider = new firebase.auth.OAuthProvider('microsoft.com');
   firebase.auth().signInWithRedirect(provider).then(function(result) {
   var token = result.credential.accessToken;
   var user = result.user;
