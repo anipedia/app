@@ -31,13 +31,6 @@ function writeUserData(userId, name, email, imageUrl) {
   });
 }
 
-//Get the current userID
-var userId = firebase.auth().currentUser.uid;
-//Get the user data
-return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
-    //Do something with your user data located in snapshot
-});
-
  function Google(){
   var provider = new firebase.auth.FacebookAuthProvider();
   firebase.auth().signInWithRedirect(provider).then(function(result) {
