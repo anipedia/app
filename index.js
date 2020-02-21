@@ -73,13 +73,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     var user = firebase.auth().currentUser;
 
     if(user){
-function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + userId).set({
-    username: name,
-    email: email
-    //some more user data
-  });
-}
       var email_id = user.email;
 	  var name = user.displayName;
 	  var photoUrl = user.photoURL;
@@ -114,6 +107,7 @@ function login(){
   });
 
 }
+
 
 function logout(){
   firebase.auth().signOut();
