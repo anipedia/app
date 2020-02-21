@@ -109,6 +109,19 @@ function login(){
 }
 
 
+var database = firebase.database();
+
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email
+  });
+}
+
+var userId = firebase.auth().currentUser.uid;
+return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+});
+
 function logout(){
   firebase.auth().signOut();
 }
