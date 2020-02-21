@@ -23,6 +23,21 @@ var firebaseConfig = {
 		alert("Signed Up");
 	}
 
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email
+    //some more user data
+  });
+}
+
+//Get the current userID
+var userId = firebase.auth().currentUser.uid;
+//Get the user data
+return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+    //Do something with your user data located in snapshot
+});
+
  function Google(){
   var provider = new firebase.auth.FacebookAuthProvider();
   firebase.auth().signInWithRedirect(provider).then(function(result) {
@@ -75,13 +90,6 @@ firebase.auth().onAuthStateChanged(function(user) {
       var email_id = user.email;
 	  var name = user.displayName;
 	  var photoUrl = user.photoURL;
-	  var uid : user.uid;
-	  
- firebaseDataBase.ref('users/' + user.uid).set({
-        email: user.email,
-        uid : user.uid,
-        name: user.displayName
-    });
 	  
       document.getElementById("user_para").innerHTML = email_id;
       document.getElementById("auser_para").innerHTML = name;
