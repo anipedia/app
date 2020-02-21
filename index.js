@@ -23,25 +23,15 @@ var firebaseConfig = {
 		alert("Signed Up");
 	}
 
-{
-  "rules": {
-    "users": {
-      "$user_id": {
-        ".write": "$user_id === auth.uid"
-      }
-    }
-  }
-}
 
-function writeUserData(userId, name, email, imageUrl) {
+ function Google(){
+ function writeUserData(userId, name, email, imageUrl) {
   firebase.database().ref('users/' + userId).set({
     username: name,
     email: email
     //some more user data
   });
 }
-
- function Google(){
   var provider = new firebase.auth.FacebookAuthProvider();
   firebase.auth().signInWithRedirect(provider).then(function(result) {
   var token = result.credential.accessToken;
