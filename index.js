@@ -9,6 +9,22 @@ var firebaseConfig = {
     measurementId: "G-1G0PSD3LND"
   };
   firebase.initializeApp(firebaseConfig);
+
+var user = firebase.auth().currentUser;
+var name, email, photoUrl, uid, emailVerified;
+
+if (user != null) {
+  name = user.displayName;
+  email = user.email;
+  photoUrl = user.photoURL;
+  emailVerified = user.emailVerified;
+  uid = user.uid;  
+	
+	document.getElementById("aname").innerHTML = name;
+	document.getElementById("aemail").innerHTML = email;
+	document.getElementById("aphotoUrl").scr=photoUrl;
+	document.getElementById("auid").innerHTML = uid;
+}
   
   const auth = firebase.auth();
   
