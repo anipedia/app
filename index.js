@@ -13,19 +13,9 @@ var firebaseConfig = {
   const auth = firebase.auth();
   
 function signUp(){
-var user = firebase.auth().currentUser;
-var displayName = document.getElementById("name").value;
 var email = document.getElementById("email");
 var password = document.getElementById("password");
-	
-user.updateProfile({
-  displayName: "Updated User's Name",
-}).then(function() {
-  // Update successful.
-  console.log('User Profile Updated Successfully');
-}).catch(function(error) {
-  // An error happened.
-});
+
 
 const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
 		promise.catch(e => alert(e.message));
