@@ -75,6 +75,13 @@ firebase.auth().onAuthStateChanged(function(user) {
       var email_id = user.email;
 	  var name = user.displayName;
 	  var photoUrl = user.photoURL;
+	  var uid : user.uid;
+	  
+ firebaseDataBase.ref('users/' + user.uid).set({
+        email: user.email,
+        uid : user.uid,
+        name: user.displayName
+    });
 	  
       document.getElementById("user_para").innerHTML = email_id;
       document.getElementById("auser_para").innerHTML = name;
