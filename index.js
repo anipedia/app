@@ -12,17 +12,42 @@ var firebaseConfig = {
   
   const auth = firebase.auth();
   
-  function signUp(){
+function signUp(){
+var user = firebase.auth().currentUser;
+var displayName = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+	
+user.updateProfile({
+  displayName: "Updated User's Name",
+  photoURL: "https://example.com/user/profile.jpg"
+}).then(function() {
+  // Update successful.
+  console.log('User Profile Updated Successfully');
+}).catch(function(error) {
+  // An error happened.
+});
+}
 
-		var email = document.getElementById("email");
-		var password = document.getElementById("password");
-		
-		const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
-		promise.catch(e => alert(e.message));
-		
-		alert("Signed Up");
-	}
-
+firebase.auth().createUserWithEmailAndPassword(email, password)
+.then(
+  (user)=>{
+ // here you can use either the returned user object or       firebase.auth().currentUser. I will use the returned user object
+    if(user){
+      user.updateProfile({
+         displayName: // some displayName,
+         photoURL: // some photo url
+      }).then(
+        (s)=> // perform any other operation
+      )
+    }
+})
+.catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
 
  function Google(){
   var provider = new firebase.auth.FacebookAuthProvider();
@@ -107,22 +132,6 @@ function login(){
   });
 
 }
-
-
-var database = firebase.database();
-
-function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + userId).set({
-    username: name,
-    email: email
-  });
-}
-
-var userId = firebase.auth().currentUser.uid;
-return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
-  var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-  // ...
-});
 
 function logout(){
   firebase.auth().signOut();
