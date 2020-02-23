@@ -17,9 +17,8 @@ function signUp() {
 
         skey.set(userObj).then(function(success) {
             alert("Your account has been created.");
-            location.href='http://go:index';
+            window.open('https://go:index');
         });
-
     })
     
     .catch(function(error) {
