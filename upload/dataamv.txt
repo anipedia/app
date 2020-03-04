@@ -1,0 +1,6 @@
+<video class="video" width="400" controls>
+  <source src="http://file.anipedia.co.uk/Amv/2.mp4" type="video/mp4">
+</video>
+<video class="video" width="400" controls>
+  <source src="http://file.anipedia.co.uk/Amv/2.mp4" type="video/mp4">
+</video>
