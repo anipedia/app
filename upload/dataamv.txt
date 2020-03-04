@@ -1,5 +1,5 @@
 <video class="video" width="400" preload="metadata" controls>
-  <source src="https://github.com/anipedia/app/blob/master/upload/amv/vangod%20on%20Instagram_%20_ditf%20edit__Bw4YtKFgQ3_(MP4).mp4#t=0.5?raw=true" type="video/mp4">
+  <source src="https://github.com/anipedia/app/blob/master/upload/amv/vangod%20on%20Instagram_%20_ditf%20edit__Bw4YtKFgQ3_(MP4).mp4#t=0.5" type="video/mp4">
 </video>
 <video class="video" width="400"preload="metadata" controls>
   <source src="https://github.com/anipedia/app/blob/master/upload/amv/vangod%20on%20Instagram_%20_ded%20gun%20%20audio%20_%20NF%20-%20when%20i(MP4).mp4#t=0.5?raw=true" type="video/mp4">
