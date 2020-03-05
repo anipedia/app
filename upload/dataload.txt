@@ -1,0 +1,111 @@
+<div class="gallery gallery-thumbs">
+    	          
+				<a class="meo meooo" href="go:anime">
+					<img src="https://anipedia.github.io/app/a.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">Anime</span>
+				</a>		
+				<a class="meo meooo" href="go:manga">
+					<img src="https://anipedia.github.io/app/m.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">Manga</span>
+				</a>
+				<a class="meo meooo" href="go:update">
+					<img src="https://anipedia.github.io/app/GLITCH_20200303185403.gif" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">Update</span>
+				</a>
+				</div>
+				</div>
+				
+				
+				<div class="caption-top  top-5 right-20">
+                <p class="text-right color-white iicckk "><i style="font-size: 30px;"class=" material-icons">fiber_new</i></p>
+            </div>
+            
+				<div class="ukmeo  left-15 right-15">
+				
+				<div class="left-0 right-0">
+				<div class="left-40 bottom-10 right-40">
+				
+				<div class="double-slider uki owl-carousel owl-no-dots">
+                <div>
+                    <div class="caption caption-margins round-medium shadow-large">
+                        
+                        <div class="caption-overlay bg-gradient"></div>
+                        <img class="caption-image owl-lazy" src="https://anipedia.github.io/app/m.png">
+                    </div>
+                    <div class="ukb button-bottom">
+                            <h4 class="color-white center-text uppercase ultrabold ">Appeca</h4>
+                        </div>
+                </div>
+                <div>
+                    <div class="caption caption-margins round-medium shadow-large">
+                        
+                        <div class="caption-overlay bg-gradient"></div>
+                        <img class="caption-image owl-lazy" src="https://anipedia.github.io/app/m.png">
+                    </div>
+                    <div class="ukb button-bottom">
+                            <h4 class="color-white center-text uppercase ultrabold ">Appeca</h4>
+                        </div>
+                </div>
+                <div>
+                    <div class="caption caption-margins round-medium shadow-large">
+                        
+                        <div class="caption-overlay bg-gradient"></div>
+                        <img class="caption-image owl-lazy" src="https://anipedia.github.io/app/m.png">
+                    </div>
+                    <div class="ukb button-bottom">
+                            <h4 class="color-white center-text uppercase ultrabold ">Appeca</h4>
+                        </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+               
+                </div>
+            </div><div class="content">
+				<div class="gallery gallery-thumbs">
+                                        
+				<a class="meo meooo" href="go:chat">
+					<img src="https://anipedia.github.io/app/c.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">chat</span>
+				</a>
+				<a class="meo meooo" href="go:mangadex">
+					<img src="https://anipedia.github.io/app/mangadex.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">Manga dex</span>
+				</a>
+				<a class="meo meooo" href="go:mal">
+					<img src="https://anipedia.github.io/app/MAL.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">MAL</span>
+				</a>
+				<a class="meo meooo" href="https://anichart.net/">
+					<img src="https://anipedia.github.io/app/AC.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">AniChart</span>
+				</a>
+				<a class="meo meooo" href="https://anilist.co/social">
+					<img src="https://anipedia.github.io/app/AL.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">AniList</span>
+				</a>
+				<a class="meo meooo" href="https://www.animefever.tv/">
+					<img src="https://anipedia.github.io/app/animeA.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">Anime Fever</span>
+				</a>
+				<a class="meo meooo" href="https://4anime.to/">
+					<img src="https://anipedia.github.io/app/4anime.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">4Anime</span>
+				</a>
+				<a class="meo meooo" href="https://animeflix.io/">
+					<img src="https://anipedia.github.io/app/animeflix.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">Anime Flix</span>
+				</a>
+				<a class="meo meooo" href="go:share">
+					<img src="https://anipedia.github.io/app/s.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">Share</span>
+				</a>
+				<a class="meo meooo" href="go:addsite">
+					<img src="https://anipedia.github.io/app/AA.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">addsite</span>
+				</a>
+				<a class="meo meooo" href="go:report">				<img src="https://anipedia.github.io/app/markH.png" class="meoo" alt="img">
+					<span class="color-theme uppercase ultrabold">Report</span>
+				</a>
+			</div>
