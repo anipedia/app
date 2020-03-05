@@ -1,4 +1,9 @@
-<div class="gallery gallery-thumbs">
+<div class="content">
+            
+        </div> 
+         <div class="content">
+       
+      <div class="gallery gallery-thumbs">
     	          
 				<a class="meo meooo" href="go:anime">
 					<img src="https://anipedia.github.io/app/a.png" class="meoo" alt="img">
@@ -109,3 +114,9 @@
 					<span class="color-theme uppercase ultrabold">Report</span>
 				</a>
 			</div>
+			  
+        
+         
+		</div>
+		
+    </div>
