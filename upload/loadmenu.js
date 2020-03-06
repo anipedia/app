@@ -1,12 +1,12 @@
 var myArray = [
-{
- "iname" : "Anipedoa",
- "iurl" : "https://anipedia.github.io/app/redM.png"	
+}
+ "iname" : "One Piece",
+ "iurl" : "https://animekisa.tv/img/coversjpg/one-piece.jpg.webp"
 },{
- "iname" : "Aniped11",
- "iurl" : "https://anipedia.github.io/app/a.png"	
+ "iname" : "One Piece",
+ "iurl" : "https://animekisa.tv/img/coversjpg/one-piece.jpg.webp"
 },{
- "iname" : "Aniped33",
- "iurl" : "https://anipedia.github.io/app/AA.png"	
+ "iname" : "One Piece",
+ "iurl" : "https://animekisa.tv/img/coversjpg/one-piece.jpg.webp"
 }
 ];
